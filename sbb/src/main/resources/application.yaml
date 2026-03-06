@@ -14,7 +14,7 @@ spring:
 
   thymeleaf:
     cache: false
-    prefix: file:src/main/resources/templates/
+
 
   h2:
     console:
@@ -26,4 +26,5 @@ spring:
     driver-class-name: org.h2.Driver
     username: sa
     password:
+
 
