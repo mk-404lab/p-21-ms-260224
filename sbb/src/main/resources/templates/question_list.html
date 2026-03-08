@@ -1,27 +1,14 @@
-<!--<table>-->
-<!--    <thead>-->
-<!--    <tr>-->
-<!--        <th>제목</th>-->
-<!--        <th>작성일시</th>-->
-<!--    </tr>-->
-<!--    </thead>-->
-<!--    <tbody>-->
-<!--    <tr th:each="question : ${questionList}">-->
-<!--        <td th:text="${question.subject}"></td>-->
-<!--        <td th:text="${question.createDate}"></td>-->
-<!--    </tr>-->
-<!--    </tbody>-->
-<!--</table>-->
+
 
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.w3.org/1999/xhtml" layout:decorate="~{layout}">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" th:href="@{/bootstrap.min.css}">
+
 </head>
 <body>
 
-<div class="container my-3">
+<div layout:fragment="count" class="container my-3">
     <table class="table">
         <thead class="table-dark">
             <tr>
